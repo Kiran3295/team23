@@ -64,7 +64,7 @@ with dataset:
 
 
 with dataset:
-    chart = (alt.Chart(mpg)# including the csv file
+    chart2 = (alt.Chart(mpg)# including the csv file
     .encode(
     x='Sales Agent ID', # adding the X value
     y='Sales',# adding the Y value
@@ -74,14 +74,14 @@ with dataset:
     .mark_bar()# Making it as circular representation
     .properties(width = 500)
     ).interactive()
-    chart.display()# displaying the data
+    chart2.display()# displaying the data
 
 
 # In[17]:
 
 
 with dataset:
-    chart = (alt.Chart(mpg)# including the csv file
+    chart3 = (alt.Chart(mpg)# including the csv file
     .encode(
     x='Sales Agent ID', # adding the X value
     y='Sales',# adding the Y value
@@ -92,14 +92,14 @@ with dataset:
     .mark_line()# Making it as circular representation
   
     ).interactive()
-    chart.display()# displaying the data
+    chart3.display()# displaying the data
 
 
 # In[18]:
 
 
 with dataset:
-    chart = (alt.Chart(mpg)# including the csv file
+    chart4 = (alt.Chart(mpg)# including the csv file
     .encode(
     x='Sales Agent ID', # adding the X value
     y='Sales',# adding the Y value
@@ -108,14 +108,14 @@ with dataset:
     )
     .mark_rect()# Making  representation
     ).interactive()
-    chart.display()# displaying the data
+    chart4.display()# displaying the data
 
 
 # In[19]:
 
 
 with dataset:
-    chart = (alt.Chart(mpg)# including the csv file
+    chart5 = (alt.Chart(mpg)# including the csv file
     .encode(
     x='Sales Agent ID', # adding the X value
     y='Quantity',# adding the Y value
@@ -124,7 +124,7 @@ with dataset:
     )
     .mark_boxplot()# Making it as boxplot representation
     ).interactive()
-    chart.display()# displaying the data
+    chart5.display()# displaying the data
 
 
 # In[30]:
@@ -132,7 +132,7 @@ with dataset:
 
 with dataset:
     selection= alt.selection_multi(fields=['State'],bind='legend')
-    chart = (alt.Chart(mpg)
+    chart6 = (alt.Chart(mpg)
     .encode( 
     y='Sales',
     color = "State",
@@ -140,7 +140,7 @@ with dataset:
     ).add_selection(selection)
     .mark_point()
     ) 
-chart.encode(x='Sales Agent ID')|chart.encode(x='Zip Code')
+chart6.encode(x='Sales Agent ID')|chart.encode(x='Zip Code')
 
 
 # In[ ]:
