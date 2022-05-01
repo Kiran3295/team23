@@ -48,7 +48,7 @@ with header:
 with dataset:
     st.title("Data visulization Project 1")
     # Encoding Data using Color and Size
-    chart = (alt.Chart(mpg)# including the csv file
+    chart1 = (alt.Chart(mpg)# including the csv file
     .encode(
     x='Sales Agent ID', # adding the X value
     y='Sales',# adding the Y value
@@ -57,7 +57,7 @@ with dataset:
     )
     .mark_circle()# Making it as circular representation
     ).interactive()
-    chart.display()# displaying the data
+    chart1.display()# displaying the data
 
 
 # In[15]:
