@@ -140,7 +140,7 @@ with dataset:
     ).add_selection(selection)
     .mark_point()
     ) 
-chart6.encode(x='Sales Agent ID')|chart.encode(x='Zip Code')
+chart6.encode(x='Sales Agent ID')|chart6.encode(x='Zip Code')
 
 
 # In[ ]:
